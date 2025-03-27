@@ -1,4 +1,4 @@
-#Bitwise operators
+# Bitwise operators
 
 | Type of Bitwise Operator | Symbol | Operation                                     |
 |--------------------------|--------|-----------------------------------------------|
@@ -27,9 +27,6 @@ After swapping: a = 20, b = 10
 ### Problem:
 Write a function to check whether a given number is a power of 2 using bitwise operators.
 
-Hint:
-
-    A number n is a power of 2 if n & (n - 1) == 0 and n > 0.
 
 ### Example Inputs & Outputs:
 ```
@@ -39,7 +36,8 @@ Output: 8 is a power of 2
 Input: 7
 Output: 7 is not a power of 2
 ```
-
+Hint:
+A number n is a power of 2 if `n & (n - 1) == 0` and `n > 0`.
 ## Exercise 3: Count the Number of 1s in a Binary Representation (Hamming Weight)
 
 ### Problem:
@@ -53,6 +51,8 @@ Output: 2
 Input: 15 (1111 in binary)
 Output: 4
 ```
+Hint:
+Use `num & 1` to check if the last bit is 1, then right shift (>>) the number.
 
 ## Exercise 4: Extract the K-th Bit of a Number
 
@@ -67,6 +67,8 @@ Output: 1
 Input: num = 13 (1101 in binary), k = 2
 Output: 0
 ```
+Hint:
+Use `(num >> k) & 1` to get the k-th bit.
 
 ## Exercise 5: Toggle a Specific Bit
 
@@ -81,3 +83,5 @@ Output: 15 (1111 in binary)
 Input: num = 13 (1101 in binary), k = 2
 Output: 9  (1001 in binary)
 ```
+Hint:
+Use `num ^= (1 << k)` to toggle the k-th bit.
