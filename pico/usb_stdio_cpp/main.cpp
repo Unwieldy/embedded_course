@@ -5,11 +5,6 @@
 int main() {
     stdio_init_all();
 
-    // Wait for USB stdio connection
-    while (!stdio_usb_connected()) {
-        sleep_ms(1000);
-    }
-
     while (true) {
         std::cout << "Enter something: ";
         std::string input;
