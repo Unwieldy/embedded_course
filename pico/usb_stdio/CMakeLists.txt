@@ -7,7 +7,7 @@ set(PICO_BOARD pico_w)
 include($ENV{PICO_SDK_PATH}/external/pico_sdk_import.cmake)
 
 # Define the project
-project(uart_control C CXX ASM)
+project(usb_stdio C CXX ASM)
 
 # Set the C and C++ standards
 set(CMAKE_C_STANDARD 11)
