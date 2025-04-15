@@ -29,8 +29,7 @@ pico_add_extra_outputs(${PROJECT_NAME})
 # Link the necessary libraries
 target_link_libraries(${PROJECT_NAME}
 	pico_stdlib
-	pico_cyw43_arch_none
-	hardware_uart
+	pico_rand
 )
 
 
