@@ -22,3 +22,20 @@ target_link_libraries(timer_irq
 )
 
 pico_add_extra_outputs(timer_irq)
+
+
+# Create the executable
+add_executable(blink_irq blink_irq.cpp)
+
+# Link the necessary libraries
+target_link_libraries(blink_irq
+	pico_stdlib
+	hardware_gpio
+)
+
+# Enable USB and UART for the executable
+pico_enable_stdio_usb(blink_irq 0)
+pico_enable_stdio_uart(blink_irq 1)
+
+
+pico_add_extra_outputs(blink_irq)
